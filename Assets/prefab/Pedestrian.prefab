@@ -113,12 +113,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  color: 
   desiredVelocity: {x: 0, y: 0, z: 0}
   currentVelocity: {x: 0, y: 0, z: 0}
   MaxVelocity: {x: 0, y: 0, z: 0}
   abs_currentVelocity: 0
-  TargetPosition: {x: 0, y: 0, z: 0}
-  TargetObject: {fileID: 0}
+  TargetPosition:
+  - {x: -7.360466, y: 4.5825e-41, z: 0.00000016707921}
+  - {x: 2.6823593e+23, y: 0.9745321, z: 1e-45}
+  - {x: 4.6e-44, y: 2.1769639e+23, z: -7.360466}
+  DisapearPosition: {x: 0, y: 0, z: 0}
+  TargetIndex: 0
   desiredDirection: {x: 0, y: 0, z: 0}
   relaxationTime: 0.1
   rb: {fileID: -4503177545478622540}
@@ -132,6 +137,8 @@ MonoBehaviour:
   walls: []
   U0ab: 10
   R: 0.2
+  Wall: {fileID: 0}
+  CloseWallPoint: {x: 0, y: 0, z: 0}
 --- !u!135 &4940883285082265141
 SphereCollider:
   m_ObjectHideFlags: 0

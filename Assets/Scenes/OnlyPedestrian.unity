@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.43739772, g: 0.48519576, b: 0.5654694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -156,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5098907567793858344, guid: 8e71d480e866e4d958978517e10b0949, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 5098907567793858344, guid: 8e71d480e866e4d958978517e10b0949, type: 3}
       propertyPath: m_LocalRotation.w
@@ -217,7 +217,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -274,13 +274,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.62464523, y: -0.19741708, z: 0.16737317, w: 0.73677075}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 80.584, y: -30, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,12 +393,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d2fbb3320884c599f95dc36972ea6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sence: 0
+  door: {fileID: 0}
   pedestrian: {fileID: 1255908533406680133, guid: a5c3381a804274f88a5d9ba9d9f772ec, type: 3}
   AI: {fileID: 2329903131396796671, guid: 2cf6f60e8b9a349e2a5c3103b9e83823, type: 3}
   mean: 1.34
   deviation: 0.26
-  WalkwayDistance: 40
+  WalkwayDistance: 30
   TotalPedestrian: 0
+  PedestrianNum: 150
+  timer: 0.5
+  StartTimer: 1
+  Frequence: 2
 --- !u!4 &1369889267
 Transform:
   m_ObjectHideFlags: 0
@@ -543,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5098907567793858344, guid: 8e71d480e866e4d958978517e10b0949, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5098907567793858344, guid: 8e71d480e866e4d958978517e10b0949, type: 3}
       propertyPath: m_LocalRotation.w
